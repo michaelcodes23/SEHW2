@@ -114,6 +114,40 @@ Your commit message should read something like: <br>
 "prime numbers completed"
 
 
+
+## Rock Paper Scissors
+
+Create the rock paper scissors game for the console! [Rock paper scissors](https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors) is a game of chance where two players throw out one of the three options, rock, paper, or scissors. To determine who wins, use the following guidelines: rock beats scissors, scissors beats paper, paper beats rock. 
+
+1. Write a function called `randomMove` that returns a randomly chosen move (rock, paper, or scissors). 
+1. Then create a function called `rockPaperScissors` that runs one round of the game. It should accept two arguments, the computer's move and the user's move, and somehow compare the two to decide who the winner is and return who won. 
+
+```
+let computersMove = randomMove();
+=> rock
+
+let usersMove = randomMove();
+=> paper 
+
+rockPaperScissors(computersMove, usersMove);
+=> computer chose rock
+=> user chose paper
+=> paper beats rock, user wins!
+```
+
+### Super bonuses for rock paper scissors 
+
+Want to upgrade your mini rock paper scissors game? Consider the following!
+
+1. Try to make [rock, paper, scissors, lizard, spock](http://bigbangtheory.wikia.com/wiki/Rock_Paper_Scissors_Lizard_Spock)
+1. Instead of hardcoding the user input, let the user actually enter a choice in node by using [process.argv](https://nodejs.org/docs/latest/api/process.html#process_process_argv)
+
+
+&#x1F534; **Commit your work!** <br>
+Your commit message should read something like: <br>
+"rock paper scissors completed"
+
+
 ---
 
 ## Hungry for More? 
@@ -225,6 +259,101 @@ Your commit message should read something like: <br>
 "hfm insert dash completed"
 </details>
 
+
+---
+
+## Datatypes Refresher 
+
+So far we have seen:
+
+* Strings
+* Numbers
+* Booleans
+* Arrays
+* Objects
+
+When these datatypes are combined, we get a **data structure**, for example, an array that contains objects that each contain booleans.
+
+Let's say you are tasked with creating some software, and it is up to **you** to determine which datatypes and what data structure to use.
+
+### Answer the Following
+For each of the following, write which **datatypes** you would use to represent the data, and then give a small example of the **data structure**:
+
+```
+e.g. A computer that can be either on or off. 
+=> datatype: boolean 
+=> data structure example: const computer = true; 
+```
+
+1. A light switch that can be either on or off.
+2. A user's email address.
+3. A spaceship with a hull, laser blasters, tractor beam, and warp drive.
+4. A list of student names from our class.
+5. A list of student names from our class, each with a location.
+6. A list of student names from our class, each with a location and each with a list of favorite tv shows.
+
+:red_circle: **Commit your work!** <br>
+Your commit message should read something like: <br>
+"datatype refresher complete"
+
+## Take it Easy
+
+1. Make an array that holds all of the colors of the rainbow.
+2. Write code that will access "blue" from the rainbow array.
+3. Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
+4. Write code that will access your hobby from the object that you just created.
+
+:red_circle: **Commit your work!** <br>
+Your commit message should read something like: <br>
+"took it easy"
+
+## Crazy Object!
+
+```js
+const crazyObject = {
+  taco: [{meat: 'steak',
+         cheese: ['panela', 'queso', 'chihuahua']},
+         {meat: 'chicken',
+          salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]},
+        ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+    characters: [{
+      name: "Jeff",
+      occupation: "manager"
+    },
+    {
+      name: "funkhauser",
+      occupation: "tv dude"
+    },
+    {
+      name: "susie",
+      occupation: "jeffs wife",
+      favourtieHobby: "Swearing at Larry and Jeff"
+    },
+    ]
+  }
+}
+```
+
+Use crazy Object to log the following.
+
+1. "omg my mouth is burning"
+
+2. "Pretty pretty prettayyyyy good"
+
+3. "Swearing at Larry and Jeff"
+
+4. "Chicken Teriyaki Boyyyyyy"
+
+5. The object the contains the name `funkhauser`
+
+6. Add the quote "I'm trying to elevate small talk to medium talk" to Larry's quote array. Confirm that it was added.
+
+:red_circle: **Commit your work!** <br>
+Your commit message should read something like: <br>
+"crazy object complete"
 
 ---
 
