@@ -60,3 +60,40 @@ function printPrimes (num){
     return arrPrime
 }
 console.log(printPrimes(97));
+
+function randomMove(){
+    let move = Math.random()
+    if(move <= 0.32) move = "rock";
+    else if (move >= 0.67) move = "paper";
+    else move = "scissors";
+    return console.log(move);
+}
+
+let computerMove = randomMove();
+let userMove = randomMove();
+
+function rockPaperScissors(move1, move2){
+    if (move1 === move2){
+        console.log('its a tie! The computer and player picked the same option!')
+    }
+    if (move1 === "rock"){
+        if(move2 === "scissors"){
+        console.log("Rock beats scissors, rock wins!")
+        }
+        else return console.log("Paper beats rock, paper wins!")
+    }
+    else if (move1 === "paper"){
+        if(move2 === "rock"){
+            console.log("Paper bears rock, paper wins!")
+        }
+        else return console.log("Scissors beats paper, scissors wins!")
+    }
+    else if (move1 === "scissor"){
+        if(move2 === "paper"){
+            console.log("Scissors beat paper, scissors win!");
+        }
+        else return console.log("Rock beats scissors, rock wins!")
+    }
+}
+
+rockPaperScissors(computerMove,userMove);
