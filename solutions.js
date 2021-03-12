@@ -6,3 +6,15 @@
 //2. Console.log is a function itself that allows you to debugg your code, a return in a function
 //allows you output the code in the function 
 
+//PALINDROME
+function checkPalindrome (str){
+    let nor = str.toLowerCase()
+    console.log(nor)
+    palCheck = "";
+    for(let i = (nor.length -1); i >= 0; i--){
+    palCheck += nor.charAt(i);
+    }
+    if(nor == palCheck) console.log(true)
+    else console.log(false)
+}
+checkPalindrome("HannaH");
