@@ -140,11 +140,28 @@ function isoL(num){
     }
     console.log(leftIs);
     for(let i = 0; i < (leftIs.length -1); i++){
-        leftIs.slice(0,-1);
+       leftIs.slice(0,-1);
         console.log(leftIs);
     }
     return num;
 }
 
 console.log(isoL(6));
+//"SECOND" NUMBERS
+function secondNumbers (arr){
+    let numArr = arr;
+    console.log(numArr);
+    let maxNum = Math.max(...numArr);
+    console.log(maxNum);
+    let minNum = Math.min(...arr);
+    console.log(minNum);
+    console.log(numArr);
+    arr.splice(numArr.indexOf(maxNum),1);
+    arr.splice(numArr.indexOf(minNum),1);
+    console.log(numArr);
+    
+    console.log("the second highest number is " + Math.max(...numArr))
+    console.log("the second lowest number is " + Math.min(...numArr))
+}
 
+secondNumbers([2,10,23,101,52,48])
