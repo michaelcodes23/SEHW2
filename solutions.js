@@ -100,6 +100,7 @@ function rockPaperScissors(move1, move2){
 rockPaperScissors(computerMove,userMove);
 
 //HUNGRY FOR MORE?
+//Digit Sum
 function sumDigits (num){
     let numStr = String(num);
     let sumDig = 0;
@@ -111,3 +112,12 @@ function sumDigits (num){
 }
 console.log(sumDigits(52));
 
+//Pythagoras
+function calculateSide(sideA,sideB){
+    let numA = Math.pow(sideA,2);
+    let numB = Math.pow(sideB,2);
+    let sideC = Math.sqrt(numA + numB);
+    return sideC;
+}
+
+console.log(calculateSide(3,4))
