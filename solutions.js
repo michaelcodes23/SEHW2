@@ -180,3 +180,14 @@ function uniqueString (str){
 
 console.log(uniqueString("testing"));
 
+function insertDash (num){
+    let str = String(num)
+    let newStr = "";
+    for(let i = 0; i < str.length; i++){
+        if((str[i] % 2 !== 0) && (str[i-1] % 2 !== 0)) newStr += ("-" + str[i])
+        else newStr += str[i]
+    }
+    return newStr;
+}
+
+console.log(insertDash(123356));
