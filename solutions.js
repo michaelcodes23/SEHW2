@@ -226,4 +226,15 @@ console.log(insertDash(123356));
 
 //}
 
-
+// TAKE IT EASY
+const arr = ['red', 'orange', 'yellow','green','blue','indigo','violet'];
+const blue = arr[4];
+console.log(blue);
+const michael = {
+    favFood: 'seafood',
+    hobby: 'learning to program',
+    town: 'Astoria',
+    favData: 'objects'
+}
+const hobby = michael.hobby
+console.log(hobby);
