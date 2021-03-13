@@ -165,3 +165,18 @@ function secondNumbers (arr){
 }
 
 secondNumbers([2,10,23,101,52,48])
+
+
+//UNIQUE STRING
+function uniqueString (str){
+    let newStr = "";
+    for(let i = 0; i < str.length; i++){
+        if(newStr.includes(str[i]) == false) newStr += str[i];
+         
+    }
+
+  return newStr;
+}
+
+console.log(uniqueString("testing"));
+
