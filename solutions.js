@@ -72,6 +72,7 @@ function randomMove(){
 let computerMove = randomMove();
 let userMove = randomMove();
 
+
 function rockPaperScissors(move1, move2){
     if (move1 === move2){
         console.log('its a tie! The computer and player picked the same option!')
@@ -97,3 +98,16 @@ function rockPaperScissors(move1, move2){
 }
 
 rockPaperScissors(computerMove,userMove);
+
+//HUNGRY FOR MORE?
+function sumDigits (num){
+    let numStr = String(num);
+    let sumDig = 0;
+    for (let i = 0; i < numStr.length; i++){
+        let newNum = Number(numStr.charAt(i))
+        sumDig += newNum;
+    }
+    return sumDig
+}
+console.log(sumDigits(52));
+
