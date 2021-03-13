@@ -120,4 +120,31 @@ function calculateSide(sideA,sideB){
     return sideC;
 }
 
-console.log(calculateSide(3,4))
+console.log(calculateSide(3,4));
+
+function isoR(num){
+    let rightIs = "#";
+    for(let i = 1; i <= num; i++){
+        console.log(rightIs);
+        rightIs += "#";
+    }
+    return num
+}
+console.log(isoR(7));
+
+function isoL(num){
+    console.log(num);
+    let leftIs = "";
+    for(let i = 1; i <= num; i++){
+        leftIs += "#";
+    }
+    console.log(leftIs);
+    for(let i = 0; i < (leftIs.length -1); i++){
+        leftIs.slice(0,-1);
+        console.log(leftIs);
+    }
+    return num;
+}
+
+console.log(isoL(6));
+
