@@ -147,7 +147,8 @@ function isoL(num){
 }
 
 console.log(isoL(6));
-//"SECOND" NUMBERS
+//"SECOND" NUMBERS - the code below runs but the splice method does not seem to remove
+//each of the starts after I created 6 stars in one line
 function secondNumbers (arr){
     let numArr = arr;
     console.log(numArr);
@@ -191,3 +192,38 @@ function insertDash (num){
 }
 
 console.log(insertDash(123356));
+
+//DATATYPES REFRESHER
+//1. datatype: boolean
+//data structure example: const ligthSwitch = false;
+//2. datatype: string
+//data structure example: const email = "email@outlook.com";
+//3. datatype: array
+//data structure example: const spaceship = ['hull', 'laser blasters',
+//'tractor beam', 'warp drive']
+//4. datatype: array
+//data structure example:  const studentNames = [studentA, studentB, studentC];
+//5. datatype: object
+//data structure example: const students = {
+//  studentA: locationA,
+//  studentB: locationB,
+//  studentC: locationC
+//}
+//6. datatype: object
+//data structure example: const students = {
+// studentA: {
+//     location: 'A',
+//     tvShow: 'showA'
+//      },
+//     studentB: {
+//     location: 'B',
+//     tvShow: 'showB'
+//     }
+//     studentC: {
+//     location: 'C',
+//     tvShow: 'showC'
+//     }
+
+//}
+
+
